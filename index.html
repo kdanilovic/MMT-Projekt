@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedijska tehnika - Projekt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/67c48c777e.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+ 
+  <div class="container text-white text-center mt-5 mb-5">
+    <h1>Pozdrav!</h1>
+    <h2  class="">Odaberi studenta</h2>
+    <a href="#osoba1"><img id="slika_pocetna1" src="images/ja_low_Rez.jpg" alt="" class="img-thumbnail rounded-circle ms-5 me-5 mt-5 zoom-effect"></a>
+    <a href="#osoba2"><img id="slika_pocetna2" src="images/Manuel_low_rez.jpg" alt="" class="img-thumbnail rounded-circle ms-5 me-5 mt-5 zoom-effect"></a>
+
+    <p class="mt-5 mb-5"><button type="button" class="btn btn-success" id="ostali_studenti">Pogledaj i druge studente</button></p>
+    
+    <div id="students" class="container mb-5" hidden>
+      <p class="mt-5 mb-2"><a class="text-decoration-none text-success link-opacity-50-hover" href="http://ivan-berlancic.github.io" target="_blank"><button type="button" class="btn btn-success">Dragan Brajković, Ivan Berlančić<i class="fa-solid fa-arrow-right ms-2" style="color: #ffffff;"></i></button></a></p>
+      <p class="mt-2 mb-5"><a class="text-decoration-none text-success link-opacity-50-hover" href="https://ivaab.github.io/mmtCV/index.html" target="_blank"><button type="button" class="btn btn-success">Iva Bunjevac, David Budim<i class="fa-solid fa-arrow-right ms-2" style="color: #ffffff;"></i></button></a></p>
+    </div>
+  
+  </div>
+
+  <div id="osoba1" hidden>
+
+    <div class="container mt-5 text-white">
+        <div class="row ">
+      
+          <div class="col-md-2 mb-5">
+            <img class="rounded-circle img-thumbnail border border-success border-4" src="images/ja_low_Rez.jpg" height="100px" alt="" style="cursor:zoom-in" id="slika1"  data-bs-toggle="modal" data-bs-target="#imageModal1" >
+            
+
+            <p class="mt-5 mb-2"><strong>Datum rođenja:</strong> 8.11.2002.</p>
+            <p class="mt-5"><strong>Mjesto rođenja:</strong> <a class="text-decoration-none text-success" href="https://www.virovitica.hr/" target="_blank">Virovitica</p></a>
+            <p class="mt-5 mb-2"><strong>Mjesto stanovanja:</strong><a class="text-decoration-none text-success" href="https://www.slatina.hr/portal/" target="_blank"> Slatina</p></a>
+            <p class="mt-5 mb-2"><strong>Spol:</strong> Muško</p>
+            <p class="mt-5 mb-2"><strong>Hobi:</strong><a class="text-decoration-none text-success" href="https://www.instagram.com/danilovicphoto/" target="_blank"> Fotografija</p></a>
+            <p class="mt-5 mb-2"><strong>Vozačka dozvola:</strong> B kategorija</p>
+            <p class="mt-5 mb-2"><strong>Strani jezik:</strong> Engleski B2</p>
+
+    
+            <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="images/ja_full_rez.jpg" class="img-fluid" alt="High Res Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      
+          <div class="col-md-9 col-7 ms-5">
+          
+            <p class="h3">Kristijan Danilović</p>
+            <button id="playgumb1" type="button" class="btn btn-success mt-5 mb-2">
+              <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+              Audio predstavljanje</button>
+
+              <div class="container mt-2 mb-2">
+              <audio controls hidden id="audioplayer1">
+                <source src="audio/predstavljanje.m4a" type="audio/x-m4a">
+              </audio>
+            </div>
+            <p class="h4 mt-5 mb-3">Ukratko o meni</p>
+            
+            <p class="lh-lg fs-6">Od srednje škole počinjem se zanimati za programiranje gdje učimo osnove programskog jezika C, HTML-a i CSS-a. 
+              Srednjoškolsku praksu odrađujem u Tehnocentar / PC servis Slatina gdje stječem praktična znanja o servisiranju računala. Završni rad u srednjoj školi: Projektiranje i izrada tiskane pločice.
+              Trenutno sam student 3. godine stručnog studija Računarstva u Osijeku.
+              Spreman sam i voljan učiti nova znanja te se nastaviti usavršavati u području programiranja i informatike kako bi iskoristio svoj puni potencijal. Volim rad u timu i izazove. Od osobina bih istaknuo motiviranost, predanost radu, organiziranost i ustrajnost. 
+              </p>  
+            <p class="h3 text-center mt-5">OBRAZOVANJE</p>
+            <div class="mt-5">
+              <p><strong>Osnovna škola:</strong><a class="text-decoration-none text-success" href="http://os-jkozarca-slatina.skole.hr/" target="_blank"> OŠ Josipa Kozarca, Slatina</p></a>
+              <p><strong>Srednja škola:</strong><a class="text-decoration-none text-success" href="http://www.ss-mmarulica-slatina.skole.hr/" target="_blank"> Srednja Škola Marka Marulića Slatina, smjer Elektrotehničar</p></a>
+              <p><strong>Fakultet:</strong><a class="text-decoration-none text-success" href="https://www.ferit.unios.hr/" target="_blank"> FERIT, stručni prijediplomski studij Računarstva, 3. godina</p></a>
+            </div>
+
+            <div class="col-lg mb-5">
+            <p class="h3 text-center mt-5 mb-5">RADNO ISKUSTVO</p>
+            <ul>
+           <li>Odrađena srednjoškolska praksa u <a class="text-decoration-none text-success" href="https://www.facebook.com/www.tehnocentar.slatina/?locale=hr_HR" target="_blank">Tehnocentar / PC Servis Slatina</a> gdje stečem praktična znanja o servisiranju računala.</li>
+           <li>Trenutno na praksi u <a class="text-decoration-none text-success" href="https://atos.net/hr/hrvatska" target="_blank">Atos-u Osijek</a>, kao softverski inženjer.</li>
+          
+            </ul>
+            </div>
+
+            <div class="col-lg mb-5">
+              <p class="h3 text-center mt-5 mb-5">VJEŠTINE</p>
+              <ul>
+                <li class="mb-2">Kroz studij i projektne zadatke sam produbio znanja u programskim jezicima kao što su C, Python i Java, a nedavno i HTML, CSS, Bootstrap, Javascript te osnove Git-a i SQL-a.</li>
+                <li class="mb-2">Osim informatike, posjedujem znanja iz područje digitalne fotografije, video snimanja te video montaže što potvrđuju pohvalnice s brojnih hrvatskih i internacionalnih filmskih festivala.</li>
+                <li class="mb-2">Servisiranje računala</li>
+              </ul>
+
+
+              <video class="w-100 mt-5 mb-5" autoplay controls>
+                <source src="video/Slaja.mp4" type="video/mp4" />
+              </video>
+
+              <div class="container mb-5 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 mb-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModalOS">
+                            <img id="low1" src="images/os1_low.jpg" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                        </a>
+                  
+                        <div class="modal fade" id="imageModalOS" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="images/os1_full.jpg" class="img-fluid" alt="High Resolution Image 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                            <img id="low2" src="images/os2_low.bmp" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                        </a>
+                     
+                        <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="images/os2_full.bmp" class="img-fluid" alt="High Resolution Image 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                            <img id="low3" src="images/slatina_low.png" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                        </a>
+                        
+                        <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="images/slatina_full.png" class="img-fluid" alt="High Resolution Image 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal4">
+                            <img id="low4" src="images/os3_low.png" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                        </a>
+                    
+                        <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="images/os3_high.png" class="img-fluid" alt="High Resolution Image 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal5">
+                            <img id="low5" src="images/fotograf_low.gif" alt="" class="img-thumbnail mb-5" style="cursor: zoom-in;">
+                        </a>
+            
+                        <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel5" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="images/fotograf_full.gif" class="img-fluid" alt="High Resolution Image 5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+          </div>
+
+
+
+         
+
+      
+        </div>
+      </div>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+  <div id="osoba2" hidden>
+
+    
+    <div class="container mt-5 text-white">
+      <div class="row ">
+    
+        <div class="col-md-2 mb-5">
+          <img class="rounded-circle img-thumbnail border border-success border-4" src="images/Manuel_low_rez.jpg" height="100px" alt="" style="cursor:zoom-in" id="slika2"  data-bs-toggle="modal" data-bs-target="#manuel1" >
+          
+
+          <p class="mt-5 mb-2"><strong>Datum rođenja:</strong> 17.11.2001.</p>
+          <p class="mt-5"><strong>Mjesto rođenja:</strong> <a class="text-decoration-none text-success" href="https://sisak.hr/" target="_blank"> Sisak</p></a>
+          <p class="mt-5 mb-2"><strong>Mjesto stanovanja:</strong><a class="text-decoration-none text-success" href="https://sisak.hr/" target="_blank"> Sisak</p></a>
+          <p class="mt-5 mb-2"><strong>Spol:</strong> Muško</p>
+          <p class="mt-5 mb-2"><strong>Hobi:</strong><a class="text-decoration-none text-success" href="https://www.3dtvornica.hr/en/" target="_blank"> 3D printanje</p></a>
+          <p class="mt-5 mb-2"><strong>Vozačka dozvola:</strong> B kategorija</p>
+          <p class="mt-5 mb-2"><strong>Strani jezik:</strong> Engleski B2</p>
+
+  
+          <div class="modal fade" id="manuel1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img src="images/Manuel_full_rez.jpg" class="img-fluid" alt="High Res Image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+        <div class="col-md-9 col-7 ms-5">
+        
+          <p class="h3">Manuel Flegarić</p>
+          <button id="playgumb2" type="button" class="btn btn-success mt-5 mb-2">
+            <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+            Audio predstavljanje</button>
+
+            <div class="container mt-2 mb-2">
+            <audio controls hidden id="audioplayer2">
+              <source src="audio/predstavljanje2.m4a" type="audio/x-m4a">
+            </audio>
+          </div>
+          <p class="h4 mt-5 mb-3">Ukratko o meni</p>
+          
+          <p class="lh-lg fs-6">Još od osnovne škole se zanimam IT sektorom gdje sam započeo sa robotikom i automatikom, u 
+            srednjoj školi nastavio još proširivati znanje u programiranju i također nastavio u istom smjeru na fakultetu.
+             Imam veliko zanimanje za programiranjem te sam voljan za svako usavršavanje koje mi se pruži.
+            </p>  
+          <p class="h3 text-center mt-5">OBRAZOVANJE</p>
+          <div class="mt-5">
+            <p><strong>Osnovna škola:</strong><a class="text-decoration-none text-success" href="http://www.os-braca-bobetko-sk.skole.hr/" target="_blank"> OŠ Braća Bobetko</p></a>
+            <p><strong>Srednja škola:</strong><a class="text-decoration-none text-success" href="http://www.ss-tehnicka-sk.skole.hr/" target="_blank"> Tehnička škola Sisak</p></a>
+            <p><strong>Fakultet:</strong><a class="text-decoration-none text-success" href="https://www.ferit.unios.hr/" target="_blank"> FERIT, stručni prijediplomski studij Računarstva, 3. godina</p></a>
+          </div>
+
+          <div class="col-lg mb-5">
+          <p class="h3 text-center mt-5 mb-5">RADNO ISKUSTVO</p>
+          <ul>
+         <li>Odrađena srednjoškolska praksa u Italiji</li>
+         <li>Sadašnja praksa:<a class="text-decoration-none text-success" href="https://www.3dtvornica.hr/en/" target="_blank"> 3D Tvornica Osijek</a></li>
+        
+          </ul>
+          </div>
+
+          <div class="col-lg mb-5">
+            <p class="h3 text-center mt-5 mb-5">VJEŠTINE</p>
+            <ul>
+              <li class="mb-2">Kroz godine edukacije stekao sam veliko znanje raznih programskih jezika poput jezika C, C#, C++, Java i Pythona.</li>
+              <li class="mb-2">Već dvije godine se bavim 3D printanjem i svladao sam različite tehnologije 3D printa poput FDM tehnologije i SLA tehnologije.</li>
+              <li class="mb-2">Opširno znanje hardverskog i softverskog područja računala</li>
+            </ul>
+
+
+            <video class="w-100 mt-5 mb-5" autoplay controls>
+              <source src="video/Sisak.mp4" type="video/mp4" />
+            </video>
+
+            <div class="container mb-5 text-center">
+              <div class="row justify-content-center">
+                  <div class="col-md-2 mb-3">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#modal1">
+                          <img id="man_low1" src="images/m1_low.jpg" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                      </a>
+                
+                      <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body">
+                                      <img src="images/m1_full.jpg" class="img-fluid" alt="High Resolution Image 1">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#modal2">
+                          <img id="man_low2" src="images/m2_low.png" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                      </a>
+                   
+                      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body">
+                                      <img src="images/m2_full.png" class="img-fluid" alt="High Resolution Image 2">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#modal3">
+                          <img id="man_low3" src="images/m3_low.bmp" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                      </a>
+                      
+                      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body">
+                                      <img src="images/m3_full.bmp" class="img-fluid" alt="High Resolution Image 3">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#modal4">
+                          <img id="man_low4" src="images/m4_low.gif" alt="" class="img-thumbnail" style="cursor: zoom-in;">
+                      </a>
+                  
+                      <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="imageModalLabel4" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body">
+                                      <img src="images/m4_full.gif" class="img-fluid" alt="High Resolution Image 4">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#modal5">
+                          <img id="man_low5" src="images/java_low.gif" alt="" class="img-thumbnail mb-5" style="cursor: zoom-in;">
+                      </a>
+          
+                      <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="imageModalLabel5" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-body">
+                                      <img src="images/java_full.gif" class="img-fluid" alt="High Resolution Image 5">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+
+
+        </div>
+
+
+
+       
+
+    
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+      
+
+  </div>
+
+
+
+
+
+    <footer class="bg-secondary text-center text-lg-start text-white fixed-bottom mt-5">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        Web stranica je izrađena za vrijeme pohađanja 
+        <a class="text-decoration-none text-warning" href="https://www.ferit.unios.hr/" target="_blank">Elektrotehničkog fakulteta u Osijeku</a> u sklopu kolegija
+        <a class="text-decoration-none text-warning" href="https://moodle.srce.hr/2023-2024/course/view.php?id=163509" target="_blank">Multimedijska tehnika</a> 
+        
+      </div>
+     
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
